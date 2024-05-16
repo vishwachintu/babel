@@ -254,6 +254,7 @@ elif selected_page == "Vendor Selection Criteria":
     overall_score = (
         vendor_scores["total_score"].sum() / vendor_scores["Total Weight"].sum() * 100
     )
+    vendor_scores=(vendor_scores/500)*100
     st.write(f"**Overall Score for {selected_vendor}: {overall_score:.2f}%**")
 
 
